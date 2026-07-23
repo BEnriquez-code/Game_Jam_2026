@@ -9,3 +9,4 @@ racers = [
 	{id: "AI_3", current_lane: 2, x : 400, y: lane_positions_y[3]}
 ]
 
+show_debug_message(room_width, room_height)

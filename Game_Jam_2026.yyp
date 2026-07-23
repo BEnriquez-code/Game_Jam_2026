@@ -35,6 +35,7 @@
     {"id":{"name":"Title_room","path":"rooms/Title_room/Title_room.yy",},},
     {"id":{"name":"racer_functions_src","path":"scripts/racer_functions_src/racer_functions_src.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
+    {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
