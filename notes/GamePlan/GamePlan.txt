@@ -4,3 +4,11 @@ Game will be a single player momentum based space racing game against AI.
 -Passing a ship closely will give a speed boost, while hitting them will slow you both down drasticly
 -Ships will have slight slip streams that allow players to gain a little bit of speed.
 -Powerups if we have the time
+
+
+-August
+	- Player and camera movement
+-Diego
+	-ArtWork (Sprites)
+-Bulmaro
+	-Scripts for object placement
