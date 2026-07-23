@@ -13,8 +13,8 @@
   ],
   "name":"Playing_room",
   "parent":{
-    "name":"Game_Jam_2026",
-    "path":"Game_Jam_2026.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

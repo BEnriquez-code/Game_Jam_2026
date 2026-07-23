@@ -10,7 +10,12 @@
   },
   "defaultScriptType":0,
   "Folders":[
+    {"$GMFolder":"","%Name":"SFX","folderPath":"folders/SFX.yy","name":"SFX","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Souds","folderPath":"folders/Souds.yy","name":"Souds","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
@@ -23,12 +28,12 @@
   "resources":[
     {"id":{"name":"Game_manager","path":"objects/Game_manager/Game_manager.yy",},},
     {"id":{"name":"Playing_room","path":"rooms/Playing_room/Playing_room.yy",},},
-    {"id":{"name":"Titile_room","path":"rooms/Titile_room/Titile_room.yy",},},
+    {"id":{"name":"Title_room","path":"rooms/Title_room/Title_room.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Titile_room","path":"rooms/Titile_room/Titile_room.yy",},},
+    {"roomId":{"name":"Title_room","path":"rooms/Title_room/Title_room.yy",},},
     {"roomId":{"name":"Playing_room","path":"rooms/Playing_room/Playing_room.yy",},},
   ],
   "templateType":"game",
