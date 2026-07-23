@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"GamePlan",
+  "name":"GamePlan",
+  "parent":{
+    "name":"Game_Jam_2026",
+    "path":"Game_Jam_2026.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
