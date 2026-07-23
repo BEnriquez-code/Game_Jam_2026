@@ -9,22 +9,27 @@
     "name":"Default",
   },
   "defaultScriptType":0,
-  "Folders":[],
+  "Folders":[
+    {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+  ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"Game_Jam_2026",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Game_manager","path":"objects/Game_manager/Game_manager.yy",},},
+    {"id":{"name":"Playing_room","path":"rooms/Playing_room/Playing_room.yy",},},
+    {"id":{"name":"Titile_room","path":"rooms/Titile_room/Titile_room.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Titile_room","path":"rooms/Titile_room/Titile_room.yy",},},
+    {"roomId":{"name":"Playing_room","path":"rooms/Playing_room/Playing_room.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
