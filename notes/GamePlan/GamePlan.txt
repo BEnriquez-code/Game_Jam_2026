@@ -11,4 +11,4 @@ Game will be a single player momentum based space racing game against AI.
 -Diego
 	-ArtWork (Sprites)
 -Bulmaro
-	-Scripts for object placement
+	-DONE: Scripts for object placement

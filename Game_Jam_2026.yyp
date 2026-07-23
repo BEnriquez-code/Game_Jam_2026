@@ -33,6 +33,7 @@
     {"id":{"name":"Player_obj","path":"objects/Player_obj/Player_obj.yy",},},
     {"id":{"name":"Playing_room","path":"rooms/Playing_room/Playing_room.yy",},},
     {"id":{"name":"Title_room","path":"rooms/Title_room/Title_room.yy",},},
+    {"id":{"name":"racer_functions_src","path":"scripts/racer_functions_src/racer_functions_src.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
   ],
   "resourceType":"GMProject",
