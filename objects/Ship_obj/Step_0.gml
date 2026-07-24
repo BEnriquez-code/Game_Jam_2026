@@ -1,18 +1,3 @@
-//Checks the state of the ship and applies movement
-switch(current_state){
-	case ActionState.UP:
-		y -= 10;
-		break;
-	case ActionState.DOWN:
-		y += 10;
-		break;
-	case ActionState.ACCELERATING:
-		velocity += ACCELERATION_AMOUNT;
-		break;
-	case ActionState.NONE:
-		velocity -= sign(velocity) * power(abs(velocity), 1.0/3.0);
-		break;
-}
 x += velocity;
 
 was_nearby_other_ship = nearby_other_ship;

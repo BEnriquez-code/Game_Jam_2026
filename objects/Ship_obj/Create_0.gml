@@ -1,15 +1,9 @@
-enum ActionState{
-	UP,
-	DOWN,
-	ACCELERATING,
-	NONE
-}
-
 MAX_BULLETS = 3;
-ACCELERATION_AMOUNT = 10;
+ACCELERATION_AMOUNT = 0.3;
+VERTICAL_SPEED = 10;
+DRAG = 0.988
 
 velocity = 0.0;
-current_state = ActionState.NONE;
 slow_amount = 5;
 collidable = true;
 boostable = true;
@@ -23,4 +17,17 @@ function shoot_bullet(){
 		bullets--;
 		alarm[0] = Set_Alarm( 5);
 	}
+}
+
+function apply_acceleration(){
+	velocity += ACCELERATION_AMOUNT;
+}
+function apply_drag(){
+	velocity *= DRAG;
+}
+function move_down(){
+	y += VERTICAL_SPEED;
+}
+function move_up(){
+	y -= VERTICAL_SPEED;
 }
