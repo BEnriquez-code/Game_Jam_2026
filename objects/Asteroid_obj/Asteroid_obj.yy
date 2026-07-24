@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Asteroid01_spr",
+    "path":"sprites/Asteroid01_spr/Asteroid01_spr.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
