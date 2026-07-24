@@ -5,7 +5,7 @@ room_set_height(Playing_room, 1080);
 
 global.players[4] = []
 
-//Deffinition for game state
-global.game_state = GameState.ROOM_CHANGE //temp set, should be title when done
+//Definition for game state
+global.game_state = GameState.TITLE //temp set, should be title when done
 prev_game_state = global.game_state;
 global.state_changed = prev_game_state != global.game_state;
