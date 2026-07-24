@@ -1,5 +1,7 @@
 //Define lanes for y-axis
 global.lane_positions_y = [216, 432, 648, 864]; // Bottom, Middle_1, Middle_2, Top
+room_set_width(Playing_room, 10000);
+room_set_height(Playing_room, 1080);
 
 global.players[4] = []
 

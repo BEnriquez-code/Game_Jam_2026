@@ -4,6 +4,9 @@ prev_game_state = global.game_state
 
 switch(global.game_state){
 	case GameState.TITLE:
+		if (keyboard_check(vk_enter)){
+			room_goto(Playing_room);
+		}
 		break;
 	case GameState.STARTING:
 				global.players[0] = instance_create_layer(1920/2, global.lane_positions_y[0], "Instances", Player_obj);
