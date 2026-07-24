@@ -1,5 +1,6 @@
 enum GameState{
 	TITLE,
+	CONTROLS,
 	ROOM_CHANGE,
 	STARTING,
 	PLAYING,
