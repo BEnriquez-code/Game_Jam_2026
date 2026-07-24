@@ -4,6 +4,9 @@ prev_game_state = global.game_state
 
 switch(global.game_state){
 	case GameState.TITLE:
+		if (keyboard_check(vk_enter)){
+			room_goto(Playing_room);
+		}
 		break;
 	case GameState.ROOM_CHANGE:
 		room_goto(Playing_room);
