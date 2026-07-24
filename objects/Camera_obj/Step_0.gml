@@ -1,10 +1,10 @@
-if (instance_exists(obj_player) && global.gameState = GameState.PLAYING) {
+if (instance_exists(Player_obj) && global.gameState = GameState.PLAYING) {
     // Target coordinates centered on the player
-    targetx = player_obj.x + power(player_obj.velocity, 1/3);
+    targetx = global.players[0].x + power(global.players[0].velocity, 1/3);
 	targety = room_height / 2;
 	
-	if(targety > view_wport[0] - player_obj.sprite_width){
-		targety = view_wport[0] - player_obj.sprite_width;
+	if(targety > view_wport[0] - global.players[0].sprite_width){
+		targety = view_wport[0] - global.players[0].sprite_width;
 	}
 	
     // Apply the position
