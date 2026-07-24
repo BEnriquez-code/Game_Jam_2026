@@ -1,4 +1,3 @@
-velocity = 0.0;
 enum ActionState{
 	UP,
 	DOWN,
@@ -7,10 +6,11 @@ enum ActionState{
 }
 
 MAX_BULLETS = 3;
-ACCELERATION_AMOUNT = 0.3;
-VERTICAL_SPEED = 10;
-DRAG = 0.988;
+ACCELERATION_AMOUNT = 10;
+
+velocity = 0.0;
 current_state = ActionState.NONE;
+slow_amount = 5;
 collidable = true;
 boostable = true;
 bullets = MAX_BULLETS;
@@ -23,17 +23,4 @@ function shoot_bullet(){
 		bullets--;
 		alarm[0] = Set_Alarm( 5);
 	}
-}
-function apply_acceleration(){
-	velocity += ACCELERATION_AMOUNT;
-}
-function move_up(){
-	y = clamp(y - VERTICAL_SPEED,0,1080 - sprite_height);
-
-}
-function move_down(){
-	y = clamp(y + VERTICAL_SPEED,0,1080 - sprite_height);
-}
-function apply_drag(){
-	velocity *= DRAG;
 }
