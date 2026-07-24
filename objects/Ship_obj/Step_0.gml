@@ -10,7 +10,7 @@ switch(current_state){
 		velocity += ACCELERATION_AMOUNT;
 		break;
 	case ActionState.NONE:
-		velocity -= 1;
+		velocity -= sign(velocity) * power(abs(velocity), 1.0/3.0);
 		break;
 }
 x += velocity;

@@ -1,3 +1,4 @@
+velocity = 0.0;
 enum ActionState{
 	UP,
 	DOWN,
@@ -7,8 +8,6 @@ enum ActionState{
 
 MAX_BULLETS = 3;
 ACCELERATION_AMOUNT = 10;
-
-velocity = 0.0;
 current_state = ActionState.NONE;
 slow_amount = 5;
 collidable = true;
@@ -18,7 +17,7 @@ nearby_other_ship = collision_circle(x, y, (sprite_width/2) + 50, Player_obj, fa
 was_nearby_other_ship = nearby_other_ship;
 
 function shoot_bullet(){
-	if(bullets = 0) Add_To_Alarm(alarm[1], 3);
+	if(bullets == 0) Add_To_Alarm(alarm[1], 3);
 	else{
 		bullets--;
 		Set_Alarm(alarm[0], 5);

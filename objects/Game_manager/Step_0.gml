@@ -8,18 +8,23 @@ switch(global.game_state){
 			room_goto(Playing_room);
 		}
 		break;
+	case GameState.ROOM_CHANGE:
+		room_goto(Playing_room);
+		global.game_state = GameState.STARTING;
+		break;
 	case GameState.STARTING:
-				global.players[0] = instance_create_layer(1920/2, global.lane_positions_y[0], "Instances", Player_obj);
-				global.players[1] = instance_create_layer(1920/2, global.lane_positions_y[0], "Instances", Enemy_ship_obj);
-				global.players[2] = instance_create_layer(1920/2, global.lane_positions_y[0], "Instances", Enemy_ship_obj);
-				global.players[3] = instance_create_layer(1920/2, global.lane_positions_y[0], "Instances", Enemy_ship_obj);
-				camera_set_view_pos(view_camera[0], 1920/2, 1080/2);
-				show_debug_message("players created");
-				show_debug_message(instance_number(Player_obj));
-				show_debug_message(instance_number(Enemy_ship_obj));
+		global.players[0] = instance_create_layer(1920.0/2, global.lane_positions_y[0], "Instances", Player_obj);
+		global.players[1] = instance_create_layer(1920.0/2, global.lane_positions_y[1], "Instances", Enemy_ship_obj);
+		global.players[2] = instance_create_layer(1920.0/2, global.lane_positions_y[2], "Instances", Enemy_ship_obj);
+		global.players[3] = instance_create_layer(1920.0/2, global.lane_positions_y[3], "Instances", Enemy_ship_obj);
+		global.game_cam = instance_create_layer(1920/2, 1080/2, "Instances", Camera_obj);
+		camera_set_view_pos(view_camera[0], 0, 0);
+		show_debug_message(global.players[0].x);
+		show_debug_message(global.players[0].y);
 		global.game_state = GameState.PLAYING;
 		break;
 	case GameState.PLAYING:
+		
 		break;
 	case GameState.DEAD:
 		break;

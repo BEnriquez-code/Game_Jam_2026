@@ -1,5 +1,6 @@
 enum GameState{
 	TITLE,
+	ROOM_CHANGE,
 	STARTING,
 	PLAYING,
 	DEAD,
