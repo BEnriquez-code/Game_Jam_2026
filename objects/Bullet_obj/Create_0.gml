@@ -1,0 +1,1 @@
+alarm[0] = Set_Alarm(5);

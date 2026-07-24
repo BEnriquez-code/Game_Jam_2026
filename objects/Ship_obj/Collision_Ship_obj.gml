@@ -1,5 +1,5 @@
 if(collidable){
-	velocity -= 30;
+	velocity /= 1.3;
 	collidable = false;
-	Set_Alarm(alarm[0], 3);
+	alarm[0] = Set_Alarm(3);
 }

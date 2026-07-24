@@ -18,10 +18,10 @@ nearby_other_ship = collision_circle(x, y, (sprite_width/2) + 50, Player_obj, fa
 was_nearby_other_ship = nearby_other_ship;
 
 function shoot_bullet(){
-	if(bullets == 0) Add_To_Alarm(alarm[1], 3);
+	if(bullets == 0) alarm[0] += Add_To_Alarm(3);
 	else{
 		bullets--;
-		Set_Alarm(alarm[0], 5);
+		alarm[0] = Set_Alarm( 5);
 	}
 }
 function apply_acceleration(){

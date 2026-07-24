@@ -8,9 +8,5 @@ if (instance_exists(Player_obj) && global.game_state == GameState.PLAYING) {
 	
     // Apply the position
     camera_set_view_pos(view_camera[0], targetx, targety);
-
-	show_debug_message("vel: " + string(global.players[0].velocity));
-	show_debug_message("lead: " + string(lead));
-	show_debug_message("targetx: " + string(targetx))
 }
 
