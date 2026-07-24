@@ -1,7 +1,7 @@
 event_inherited();
 
 
-current_lane = (y-216) / 216;
+current_lane = clamp(round((y - 216) / 216), 0, 3);
 
 reached_lane = true;
 had_reached_lane = true;

@@ -1,5 +1,5 @@
 //Define lanes for y-axis
-global.lane_positions_y = [216, 432, 648, 864]; // Bottom, Middle_1, Middle_2, Top
+global.lane_positions_y = [216, 432, 648, 864]; // Top, Middle_1, Middle_2, Bottom
 
 global.players[4] = []
 

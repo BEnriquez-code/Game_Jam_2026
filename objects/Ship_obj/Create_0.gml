@@ -26,8 +26,8 @@ function apply_drag(){
 	velocity *= DRAG;
 }
 function move_down(){
-	y += VERTICAL_SPEED;
+	y = clamp(y + VERTICAL_SPEED, 0, 1080 - sprite_width);
 }
 function move_up(){
-	y -= VERTICAL_SPEED;
+	y = clamp(y - VERTICAL_SPEED,0, 1080-sprite_width);
 }
