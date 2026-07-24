@@ -15,9 +15,6 @@ switch(global.game_state){
 		global.players[2] = instance_create_layer(1920.0/2, global.lane_positions_y[2], "Instances", Enemy_ship_obj);
 		global.players[3] = instance_create_layer(1920.0/2, global.lane_positions_y[3], "Instances", Enemy_ship_obj);
 		global.game_cam = instance_create_layer(1920/2, 1080/2, "Instances", Camera_obj);
-		camera_set_view_pos(view_camera[0], 0, 0);
-		show_debug_message(global.players[0].x);
-		show_debug_message(global.players[0].y);
 		global.game_state = GameState.PLAYING;
 		break;
 	case GameState.PLAYING:

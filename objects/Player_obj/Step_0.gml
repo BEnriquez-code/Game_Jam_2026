@@ -1,14 +1,20 @@
 event_inherited();
 
 if(keyboard_check(vk_space)){
-	current_state = ActionState.ACCELERATING;
+	apply_acceleration();
 }
-if(keyboard_check(ord("W"))){
-	current_state = ActionState.UP;
-}
-if(keyboard_check(ord("S"))){
-	current_state = ActionState.DOWN;
+else{
+	apply_drag();
 }
 if(keyboard_check_pressed(ord("F"))){
-	shoot_bullet()
+	shoot_bullet();
+}
+if(keyboard_check(ord("W")) && keyboard_check(ord("S"))){
+	
+}
+else if(keyboard_check(ord("S"))){
+	move_down();
+}
+else if(keyboard_check(ord("W"))){
+	move_up();
 }

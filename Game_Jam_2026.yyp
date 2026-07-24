@@ -49,7 +49,6 @@
     {"id":{"name":"layer_2","path":"sprites/layer_2/layer_2.yy",},},
     {"id":{"name":"layer_3","path":"sprites/layer_3/layer_3.yy",},},
     {"id":{"name":"ship01_spr","path":"sprites/ship01_spr/ship01_spr.yy",},},
-    {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},},
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},},
   ],
   "resourceType":"GMProject",
