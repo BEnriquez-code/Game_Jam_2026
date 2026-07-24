@@ -1,3 +1,4 @@
+velocity = 0.0;
 enum ActionState{
 	UP,
 	DOWN,
@@ -7,8 +8,6 @@ enum ActionState{
 
 MAX_BULLETS = 3;
 ACCELERATION_AMOUNT = 10;
-
-velocity = 0.0;
 current_state = ActionState.NONE;
 slow_amount = 5;
 collidable = true;
