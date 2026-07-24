@@ -1,5 +1,6 @@
 enum GameState{
 	TITLE,
+	STARTING,
 	PLAYING,
 	DEAD,
 	END_SCREEN,
