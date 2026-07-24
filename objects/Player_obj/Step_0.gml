@@ -1,4 +1,4 @@
-x += velocity;
+event_inherited();
 if(keyboard_check(vk_space)){
 	action_state = ActionState.ACCELERATING;
 }

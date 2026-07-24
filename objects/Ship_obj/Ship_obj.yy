@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"ship01_spr",
+    "path":"sprites/ship01_spr/ship01_spr.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

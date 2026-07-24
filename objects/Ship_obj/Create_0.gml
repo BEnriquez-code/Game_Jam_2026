@@ -14,7 +14,7 @@ slow_amount = 5;
 collidable = true;
 boostable = true;
 bullets = MAX_BULLETS;
-nearby_other_ship = collision_circle(x, y, (sprite_width/2) + 50, obj_wall, false, true);
+nearby_other_ship = collision_circle(x, y, (sprite_width/2) + 50, Player_obj, false, true);
 was_nearby_other_ship = nearby_other_ship;
 
 function shoot_bullet(){
