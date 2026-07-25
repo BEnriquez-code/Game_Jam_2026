@@ -17,6 +17,12 @@ if(reached_lane && !had_reached_lane)
 
 had_reached_lane = reached_lane;
 
-if(velocity < 100){
+if(velocity < 200){
 	apply_acceleration();	
+}
+
+if(cast != noone){
+	if(cast.object_index == Asteroid_obj){
+		alarm[3] = Set_Alarm(0);
+	}
 }
