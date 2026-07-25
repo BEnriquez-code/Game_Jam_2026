@@ -17,6 +17,6 @@ if(reached_lane && !had_reached_lane)
 
 had_reached_lane = reached_lane;
 
-if(velocity < 10){
+if(velocity < 100){
 	apply_acceleration();	
 }
