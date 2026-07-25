@@ -12,6 +12,5 @@ cast = collision_line(x,y,x + 2000,y,all,false,true)
 if(cast != noone){
 	if((cast.object_index == Player_obj || cast.object_index == Enemy_ship_obj) && accelerating == true){
 		velocity += 0.05;
-		show_debug_message("cast detected");
 	}
 }

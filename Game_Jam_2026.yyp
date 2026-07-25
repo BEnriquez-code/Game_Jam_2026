@@ -35,6 +35,7 @@
   "resources":[
     {"id":{"name":"GamePlan","path":"notes/GamePlan/GamePlan.yy",},},
     {"id":{"name":"Asteroid_obj","path":"objects/Asteroid_obj/Asteroid_obj.yy",},},
+    {"id":{"name":"Asteroid_spawner_obj","path":"objects/Asteroid_spawner_obj/Asteroid_spawner_obj.yy",},},
     {"id":{"name":"Bullet_obj","path":"objects/Bullet_obj/Bullet_obj.yy",},},
     {"id":{"name":"Camera_obj","path":"objects/Camera_obj/Camera_obj.yy",},},
     {"id":{"name":"Enemy_ship_obj","path":"objects/Enemy_ship_obj/Enemy_ship_obj.yy",},},

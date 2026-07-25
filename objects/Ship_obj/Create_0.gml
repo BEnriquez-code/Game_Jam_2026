@@ -1,7 +1,7 @@
 MAX_BULLETS = 3;
 ACCELERATION_AMOUNT = 0.3;
 VERTICAL_SPEED = 10;
-DRAG = 0.988
+DRAG = 0.998;
 
 accelerating = false;
 velocity = 0.0;
@@ -14,11 +14,14 @@ was_nearby_other_ship = nearby_other_ship;
 cast = collision_line(x,y,x + 2000,y,all,false,true)
 
 function shoot_bullet(){
-	if(bullets == 0) alarm[0] += Add_To_Alarm(3);
+	if(bullets <= 0) alarm[1] += Add_To_Alarm(3);
 	else{
 		bullets--;
-		alarm[0] = Set_Alarm( 5);
+		alarm[1] = Set_Alarm(5);
+		bullet = instance_create_layer(x+ (sprite_width / 2), y, "Instances", Bullet_obj);
+		bullet.velocity = velocity + 40;
 	}
+	show_debug_message("alarm: " + string(alarm[1]) + "\nbullets: " + string(bullets));
 }
 
 function apply_acceleration(){

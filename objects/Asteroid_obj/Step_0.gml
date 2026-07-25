@@ -1,3 +1,3 @@
-if (x < 0 - sprite_width){
+if (x < global.min_x - sprite_width - (19020/2)){
 	instance_destroy();
 }

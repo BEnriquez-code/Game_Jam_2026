@@ -7,13 +7,6 @@ while(new_lane == current_lane)
 
 current_lane = new_lane;
 
-show_debug_message(
-    "Changing lane from " 
-    + string(old_lane) 
-    + " to " 
-    + string(current_lane)
-);
-
 lane_to_move_to = global.lane_positions_y[current_lane];
 
 reached_lane = false;
