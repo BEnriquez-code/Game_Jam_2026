@@ -24,6 +24,27 @@ switch(global.game_state){
 		global.game_state = GameState.PLAYING;
 		break;
 	case GameState.PLAYING:
+		// --- Parallax Background Logic ---
+        var _cam_x = camera_get_view_x(view_camera[0]);
+        var _cam_h = camera_get_view_height(view_camera[0]);
+		        
+        var _bg_layers = ["Backgrounds_1", "Backgrounds_2", "Backgrounds_3"];
+        var _parallax_factors = [0.85, 0.70, 0.50];
+
+        for (var i = 0; i < array_length(_bg_layers); i++) {
+            var _layer_id = layer_get_id(_bg_layers[i]);
+            if (_layer_id != -1) {
+                var _bg_element = layer_background_get_id(_layer_id);
+                var _sprite_h = sprite_get_height(layer_background_get_sprite(_bg_element));
+                
+                if (_sprite_h > 0) {
+                    var _scale = _cam_h / _sprite_h;
+                    layer_background_xscale(_bg_element, _scale);
+                    layer_background_yscale(_bg_element, _scale);
+                }
+                layer_x(_layer_id, _cam_x * _parallax_factors[i]);
+            }
+        }
 		
 		break;
 	case GameState.DEAD:
