@@ -1,5 +1,5 @@
 MAX_BULLETS = 3;
-ACCELERATION_AMOUNT = 0.3;
+ACCELERATION_AMOUNT = 0.1;
 VERTICAL_SPEED = 10;
 DRAG = 0.998;
 
@@ -18,6 +18,8 @@ function shoot_bullet(){
 	else{
 		bullets--;
 		alarm[1] = Set_Alarm(5);
+		alarm[0] = Set_Alarm(0.5);
+		collidable = false;
 		bullet = instance_create_layer(x+ (sprite_width / 2), y, "Instances", Bullet_obj);
 		bullet.velocity = velocity + 40;
 	}

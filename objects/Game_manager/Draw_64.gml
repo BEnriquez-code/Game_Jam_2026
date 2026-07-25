@@ -48,3 +48,8 @@ var gui_height = display_get_gui_height();
 	draw_text_transformed(gui_width / 2, gui_height / 2 + 80, countdown_text, scale, scale, 0);
 	draw_set_halign(fa_center);
 }
+else if(global.game_state == GameState.PLAYING){
+    for(i = 1; i < global.players[0].bullets + 1; i++){
+        draw_sprite(Bullet_spr, -1, 30, i * 20);
+    }
+}
