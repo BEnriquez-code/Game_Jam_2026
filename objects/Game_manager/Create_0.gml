@@ -7,3 +7,4 @@ global.players[4] = []
 global.game_state = GameState.TITLE //temp set, should be title when done
 prev_game_state = global.game_state;
 global.state_changed = prev_game_state != global.game_state;
+audio_play_sound(snd_background_music, 1, false);

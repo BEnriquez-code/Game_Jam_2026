@@ -1,7 +1,3 @@
-//temporary for movement testing;
-prev_game_state = global.game_state
-
-
 switch(global.game_state){
 	case GameState.TITLE:
 		
@@ -61,7 +57,7 @@ switch(global.game_state){
 				_place++;
 			}
 		}
-		global.player_place = _place;
+		global.player_place = _place
 		
 		
 		if (Player_obj.x >= finish_x){
@@ -73,6 +69,5 @@ switch(global.game_state){
 	case GameState.DEAD:
 		break;
 	case GameState.END_SCREEN:
-		
 		break;
 }
