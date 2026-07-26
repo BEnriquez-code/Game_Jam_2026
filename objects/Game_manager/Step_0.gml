@@ -70,13 +70,13 @@ switch(global.game_state){
 		
 		
 		if (Player_obj.x >= finish_x){
-<<<<<<< Updated upstream
+
 			audio_stop_sound(snd_ship_idle);
 			audio_stop_sound(snd_ship_accelerate);
 			
-=======
+
 			global.finish_signal_intensity = 0;
->>>>>>> Stashed changes
+
 			room_goto(Ending_room);
 			global.game_state = GameState.END_SCREEN;
 		}
