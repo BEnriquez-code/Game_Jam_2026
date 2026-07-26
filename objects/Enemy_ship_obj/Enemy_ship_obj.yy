@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Asteroid01_spr",
-    "path":"sprites/Asteroid01_spr/Asteroid01_spr.yy",
+    "name":"Ship02_spr",
+    "path":"sprites/Ship02_spr/Ship02_spr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"ship01_spr",
-    "path":"sprites/ship01_spr/ship01_spr.yy",
+    "name":"Ship03_spr",
+    "path":"sprites/Ship03_spr/Ship03_spr.yy",
   },
   "spriteMaskId":null,
   "visible":true,
