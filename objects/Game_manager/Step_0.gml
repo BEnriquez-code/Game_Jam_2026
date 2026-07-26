@@ -48,10 +48,19 @@ switch(global.game_state){
         }
 		
 		var finish_x = room_width - 64;
+		var _player_inst = global.players[0];
+		var signal_range = 800; //distance from finish line	to start signaling
+		
+		var dis_to_finish = finish_x - _player_inst.x;
+		
+		if (dis_to_finish > 0 && dis_to_finish <= signal_range){
+			global.finish_signal_intensity = 1 - (dis_to_finish / signal_range);
+		}else{
+			global.finish_signal_intensity = 0;
+		}
 		
 		var _place = 1;
-		var _player_inst = global.players[0];
-		
+				
 		with(Enemy_ship_obj){
 			if (x > _player_inst.x){
 				_place++;
@@ -61,15 +70,17 @@ switch(global.game_state){
 		
 		
 		if (Player_obj.x >= finish_x){
+<<<<<<< Updated upstream
 			audio_stop_sound(snd_ship_idle);
 			audio_stop_sound(snd_ship_accelerate);
 			
+=======
+			global.finish_signal_intensity = 0;
+>>>>>>> Stashed changes
 			room_goto(Ending_room);
 			global.game_state = GameState.END_SCREEN;
 		}
 		
-		break;
-	case GameState.DEAD:
 		break;
 	case GameState.END_SCREEN:
 		break;

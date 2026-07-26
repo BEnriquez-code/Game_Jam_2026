@@ -4,6 +4,5 @@ enum GameState{
 	ROOM_CHANGE,
 	STARTING,
 	PLAYING,
-	DEAD,
 	END_SCREEN,
 }

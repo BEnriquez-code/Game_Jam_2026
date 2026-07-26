@@ -7,6 +7,7 @@ randomize();
 
 //Deffinition for game state
 global.game_state = GameState.TITLE //temp set, should be title when done
+global.finish_signal_intensity = 0;
 prev_game_state = global.game_state;
 global.state_changed = prev_game_state != global.game_state;
 audio_channel_num(32);
