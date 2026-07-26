@@ -18,10 +18,16 @@ else if (room == Playing_room && global.game_state == GameState.CONTROLS){
     draw_set_color(c_white);
     draw_set_halign(fa_center);
 	
-	draw_text(gui_width / 2, gui_height / 2 - 60, "How To Play");
-    draw_text(gui_width / 2, gui_height / 2 - 20, "W, S: Move UP and DOWN");
-	draw_text(gui_width / 2, gui_height / 2 - 40, "F: To SHOOT");
-    draw_text(gui_width / 2, gui_height / 2 + 10, "SPACEBAR to boost");
+	
+	draw_text_transformed(gui_width / 2, gui_height / 2 - 140, "HOW TO PLAY", 2.0, 2.0, 0);
+
+
+	draw_text_transformed(gui_width / 2, gui_height / 2 - 50, "W / S - Move UP & DOWN", 1.0, 1.0, 0);
+	draw_text_transformed(gui_width / 2, gui_height / 2 - 10, "F - To SHOOT", 1.0, 1.0, 0);
+	draw_text_transformed(gui_width / 2, gui_height / 2 + 30, "SPACEBAR - To BOOST", 1.0, 1.0, 0);
+
+
+	draw_text_transformed(gui_width / 2, gui_height / 2 + 90, "WATCH OUT FOR ASTEROIDS!", 1.25, 1.25, 0);
 	
 	var seconds_left = ceil(countdown_timer / game_get_speed(gamespeed_fps));
 	
