@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_shooting",
+  "%Name":"snd_ship_collision",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.3920182,
+  "duration":1.0,
   "exportDir":"",
-  "name":"snd_shooting",
+  "name":"snd_ship_collision",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_shooting.mp3",
+  "soundFile":"snd_ship_collision.wav",
   "volume":1.0,
 }
