@@ -29,7 +29,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"lane_positions_y","filters":[],"listItems":[],"multiselect":false,"name":"lane_positions_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":6,},
-    {"$GMObjectProperty":"v2","%Name":"countdown_timer","filters":[],"listItems":[],"multiselect":false,"name":"countdown_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"200.0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"countdown_timer","filters":[],"listItems":[],"multiselect":false,"name":"countdown_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"300.0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

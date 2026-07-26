@@ -3,8 +3,8 @@ var gui_width = display_get_gui_width();
 
 if (global.game_state == GameState.TITLE){
 	draw_set_halign(fa_center);
-	draw_text(room_width / 2, room_height / 3, "Game Title");
-	draw_text(room_width / 2, room_height / 2, "Press Enter to Start");
+	draw_text_transformed_colour(room_width / 2, room_height / 3, "Space Blazer", 12, 10, 0,  c_white, c_red, c_orange, c_yellow, 1);
+	draw_text_transformed(room_width / 2, room_height / 2 + 80, "Press Enter to Start", 5, 5, 0);
 	
 }
 else if (room == Playing_room && global.game_state == GameState.CONTROLS){
@@ -20,6 +20,7 @@ else if (room == Playing_room && global.game_state == GameState.CONTROLS){
 	
 	draw_text(gui_width / 2, gui_height / 2 - 60, "How To Play");
     draw_text(gui_width / 2, gui_height / 2 - 20, "W, S: Move UP and DOWN");
+	draw_text(gui_width / 2, gui_height / 2 - 40, "F: To SHOOT");
     draw_text(gui_width / 2, gui_height / 2 + 10, "SPACEBAR to boost");
 	
 	var seconds_left = ceil(countdown_timer / game_get_speed(gamespeed_fps));
@@ -62,5 +63,5 @@ else if (global.game_state == GameState.PLAYING || global.game_state == GameStat
 	
 	var _text = "Position: " + string(global.player_place) + _suffix;
 	
-	draw_text(64, 32, _text);
+	draw_text_transformed_colour(room_width /2 , room_height / 2, _text, 5, 5, 0, c_red, c_yellow, c_orange, c_white, 1 );
 }
