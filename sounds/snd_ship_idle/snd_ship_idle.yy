@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"Laser_snd",
+  "%Name":"snd_ship_idle",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.7157823,
+  "duration":5.502517,
   "exportDir":"",
-  "name":"Laser_snd",
+  "name":"snd_ship_idle",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Laser_snd.wav",
+  "soundFile":"snd_ship_idle.wav",
   "volume":1.0,
 }

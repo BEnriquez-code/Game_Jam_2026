@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"IdleShip_snd",
+  "%Name":"snd_ship_accelerate",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":5.0009975,
   "exportDir":"",
-  "name":"IdleShip_snd",
+  "name":"snd_ship_accelerate",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"IdleShip_snd.wav",
+  "soundFile":"snd_ship_accelerate.wav",
   "volume":1.0,
 }

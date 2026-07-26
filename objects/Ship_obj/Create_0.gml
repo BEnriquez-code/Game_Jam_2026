@@ -12,6 +12,8 @@ bullets = MAX_BULLETS;
 nearby_other_ship = collision_circle(x, y, (sprite_width/2) + 50, Player_obj, false, true);
 was_nearby_other_ship = nearby_other_ship;
 cast = collision_line(x,y,x + 2000,y,all,false,true)
+sprite_index = choose(Ship02_spr, Ship03_spr, Ship04_spr);
+
 
 function shoot_bullet(){
 	if(bullets <= 0) alarm[1] += Add_To_Alarm(3);

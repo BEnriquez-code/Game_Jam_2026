@@ -1,7 +1,5 @@
 event_inherited();
 
-sprite_index = choose(Ship02_spr, Ship03_spr);
-
 
 current_lane = clamp(round((y - 216) / 216), 0, 3);
 
