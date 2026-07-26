@@ -1,13 +1,13 @@
+var gui_height = display_get_gui_height();
+var gui_width = display_get_gui_width();
+
 if (global.game_state == GameState.TITLE){
 	draw_set_halign(fa_center);
 	draw_text(room_width / 2, room_height / 3, "Game Title");
 	draw_text(room_width / 2, room_height / 2, "Press Enter to Start");
 }
-
-if (room == Playing_room && global.game_state == GameState.CONTROLS){
+else if (room == Playing_room && global.game_state == GameState.CONTROLS){
 	
-var gui_height = display_get_gui_height();
-	var gui_width = display_get_gui_width();
 	
 	draw_set_alpha(0.6);
     draw_set_color(c_black);
@@ -52,4 +52,14 @@ else if(global.game_state == GameState.PLAYING){
     for(i = 1; i < global.players[0].bullets + 1; i++){
         draw_sprite(Bullet_spr, -1, 30, i * 20);
     }
+}
+else if (global.game_state == GameState.PLAYING || global.game_state == GameState.END_SCREEN){
+	draw_set_color(c_white);
+	
+	var _suffixes = ["st", "nd", "rd", "th"];
+	var _suffix = _suffixes[clamp(global.player_place - 1, 0, 3)];
+	
+	var _text = "Position: " + string(global.player_place) + _suffix;
+	
+	draw_text(64, 32, _text);
 }

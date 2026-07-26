@@ -47,9 +47,28 @@ switch(global.game_state){
             }
         }
 		
+		var finish_x = room_width - 64;
+		
+		var _place = 1;
+		var _player_inst = global.players[0];
+		
+		with(Enemy_ship_obj){
+			if (x > _player_inst.x){
+				_place++;
+			}
+		}
+		global.player_place = _place;
+		
+		
+		if (Player_obj.x >= finish_x){
+			room_goto(Ending_room);
+			global.game_state = GameState.END_SCREEN;
+		}
+		
 		break;
 	case GameState.DEAD:
 		break;
 	case GameState.END_SCREEN:
+		
 		break;
 }
